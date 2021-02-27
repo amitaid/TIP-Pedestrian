@@ -125,6 +125,7 @@ def parse_args():
                         help='Optional. Path to file with camera extrinsics.',
                         type=str, default=None)
     parser.add_argument('--fx', type=np.float32, default=-1, help='Optional. Camera focal length.')
+    parser.add_argument('--dataset', type=str, default='actions-posesData.csv', help='Dataset file location')
     return parser.parse_args()
 
 
@@ -160,7 +161,7 @@ if __name__ == '__main__':
 
     
     # Load dataset
-    path = "3d\\Poses\\posesData.csv"     # url or just path
+    path = args.dataset     # url or just path
     dataset = read_csv(path)
 
     # Split-out validation dataset
