@@ -10,6 +10,7 @@
 * [Inference with TensorRT](#inference-tensorrt)
 
 ## Requirements
+These programs are required to be able to build the pose estimator locally.
 * Python 3.5 (or above)
 * CMake 3.10 (or above)
 * C++ Compiler (g++ or MSVC)
@@ -18,7 +19,7 @@
 > [Optional] [Intel OpenVINO](https://software.intel.com/en-us/openvino-toolkit) for fast inference on CPU.
 > [Optional] [NVIDIA TensorRT](https://docs.nvidia.com/deeplearning/tensorrt/install-guide/index.html) for fast inference on Jetson.
 
-## Prerequisites
+## Build instructions
 1. Install requirements:
 ```
 pip install -r requirements.txt
