@@ -41,7 +41,7 @@ Pre-trained model is available at [Google Drive](https://drive.google.com/file/d
 
 To run the demo, pass path to the pre-trained checkpoint and camera id (or path to video file):
 ```
-python main.py --model human-pose-estimation-3d.pth --video 0
+python main.py
 ```
 > Running with --video 0 uses the device camera. You can instead of 0 provide the path of a video file and the program will run on that.
 
